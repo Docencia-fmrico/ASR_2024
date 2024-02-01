@@ -21,7 +21,7 @@ int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
 
-  auto node = std::make_shared<node_programming::SubscriberNode>();
+  auto node = node_programming::SubscriberNode::make_shared();
 
   rclcpp::spin(node);
 
