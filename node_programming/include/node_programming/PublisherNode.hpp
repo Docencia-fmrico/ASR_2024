@@ -34,4 +34,5 @@ private:
 };
 
 }  //  namespace node_programming
+
 #endif  // NODE_PROGRAMMING__PUBLISHERNODE_HPP_

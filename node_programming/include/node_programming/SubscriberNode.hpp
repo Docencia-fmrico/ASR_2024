@@ -35,4 +35,5 @@ private:
 };
 
 }  //  namespace node_programming
+
 #endif  // NODE_PROGRAMMING__SUBSCRIBERNODE_HPP_
