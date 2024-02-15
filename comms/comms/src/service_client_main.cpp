@@ -42,7 +42,7 @@ int main(int argc, char ** argv)
     }
   }
 
-  {  // Widely used approach
+  {  // Better approach
     auto node = std::make_shared<comms::ServiceClient2>();
     auto result = node->call_client(argv[1]);
 
