@@ -1,0 +1,6 @@
+string key
+---
+bool success
+string final_content
+---
+string provisional_content
