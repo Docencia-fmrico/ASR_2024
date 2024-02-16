@@ -1,0 +1,14 @@
+{
+  "python.autoComplete.extraPaths": [
+    "/home/fmrico/ros/ros2/asr24_ws/install/openni2_camera_msgs/local/lib/python3.10/dist-packages",
+    "/home/fmrico/ros/ros2/asr24_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/home/fmrico/ros/ros2/asr24_ws/install/openni2_camera_msgs/local/lib/python3.10/dist-packages",
+    "/home/fmrico/ros/ros2/asr24_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ]
+}

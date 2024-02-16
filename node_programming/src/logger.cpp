@@ -22,12 +22,10 @@ int main(int argc, char * argv[])
 
   auto node = rclcpp::Node::make_shared("logger_node");
 
-  auto start_ts = node->now();
-
-  rclcpp::Rate loop_rate(500ms);
+  rclcpp::Rate loop_rate(10ms);
   int counter = 0;
-  while (rclcpp::ok() && (node->now() - start_ts) < 5s) {
-    RCLCPP_INFO(node->get_logger(), "Hello %d", counter++);
+  while (rclcpp::ok()) {
+    RCLCPP_ERROR(node->get_logger(), "Hello %d", counter++);
 
     rclcpp::spin_some(node);
     loop_rate.sleep();

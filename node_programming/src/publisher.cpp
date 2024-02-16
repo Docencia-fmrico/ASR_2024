@@ -22,13 +22,12 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
 
   auto node = rclcpp::Node::make_shared("publisher_node");
-  auto publisher = node->create_publisher<std_msgs::msg::Int32>(
-    "int_topic", 10);
+  auto publisher = node->create_publisher<std_msgs::msg::Int32>("int_topic", 10);
 
   std_msgs::msg::Int32 message;
   message.data = 0;
 
-  rclcpp::Rate loop_rate(500ms);
+  rclcpp::Rate loop_rate(50ms);
   while (rclcpp::ok()) {
     message.data += 1;
     publisher->publish(message);

@@ -47,6 +47,18 @@ add_executable(subscriber_class src/subscriber_class.cpp)
 ament_target_dependencies(subscriber_class ${dependencies})
 target_link_libraries(subscriber_class ${PROJECT_NAME})
 
+add_executable(pub_sub_st src/pub_sub_st.cpp)
+ament_target_dependencies(pub_sub_st ${dependencies})
+target_link_libraries(pub_sub_st ${PROJECT_NAME})
+
+add_executable(pub_sub_mt src/pub_sub_mt.cpp)
+ament_target_dependencies(pub_sub_mt ${dependencies})
+target_link_libraries(pub_sub_mt ${PROJECT_NAME})
+
+add_executable(pub_sub_sst src/pub_sub_sst.cpp)
+ament_target_dependencies(pub_sub_sst ${dependencies})
+target_link_libraries(pub_sub_sst ${PROJECT_NAME})
+
 install(TARGETS
   simple
   logger
@@ -55,6 +67,9 @@ install(TARGETS
   logger_class
   publisher_class
   subscriber_class
+  pub_sub_st
+  pub_sub_mt
+  pub_sub_sst
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}

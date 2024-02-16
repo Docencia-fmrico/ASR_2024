@@ -47,7 +47,6 @@ private:
 
   const rclcpp::Duration TURNING_TIME {2s};
   const rclcpp::Duration BACKING_TIME {2s};
-  const rclcpp::Duration SCAN_TIMEOUT {1s};
 
   static constexpr float SPEED_LINEAR = 0.3f;
   static constexpr float SPEED_ANGULAR = 0.3f;

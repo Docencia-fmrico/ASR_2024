@@ -1,0 +1,1 @@
+/usr/lib/ccache/c++ CMakeFiles/program.dir/src/program.cpp.o CMakeFiles/program.dir/src/functions.cpp.o -o program 

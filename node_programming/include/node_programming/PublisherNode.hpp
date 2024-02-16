@@ -16,6 +16,7 @@
 #define NODE_PROGRAMMING__PUBLISHERNODE_HPP_
 
 #include "rclcpp/rclcpp.hpp"
+#include "rclcpp/macros.hpp"
 #include "std_msgs/msg/int32.hpp"
 
 namespace node_programming
@@ -24,6 +25,8 @@ namespace node_programming
 class PublisherNode : public rclcpp::Node
 {
 public:
+  RCLCPP_SMART_PTR_DEFINITIONS(PublisherNode)
+
   PublisherNode();
   void timer_callback();
 

@@ -1,0 +1,7 @@
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/uninstall.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/cmake_tutorial_4_uninstall.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/functions_cmake_tutorial_4.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/program.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/test.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/edit_cache.dir
+/home/fmrico/ros/ros2/asr24_ws/src/ASR_2024/tutorial_cmake/step_4/build/CMakeFiles/rebuild_cache.dir
