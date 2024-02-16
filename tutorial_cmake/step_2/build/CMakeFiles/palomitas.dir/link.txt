@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++ -fPIC -shared -Wl,-soname,libpalomitas.so -o libpalomitas.so CMakeFiles/palomitas.dir/src/cmake_tutorial_2/functions.cpp.o 
