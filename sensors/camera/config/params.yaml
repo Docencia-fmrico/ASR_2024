@@ -1,0 +1,9 @@
+hsv_filter_node:
+  ros__parameters:
+    use_sim_time: true
+    min_h: 5
+    max_h: 27
+    min_s: 0
+    max_s: 255
+    min_v: 0
+    max_v: 255

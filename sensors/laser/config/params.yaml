@@ -1,0 +1,4 @@
+obstacle_detector_node:
+  ros__parameters:
+    use_sim_time: true
+    min_distance: 0.75
