@@ -24,7 +24,7 @@ int main(int argc, char ** argv)
 
   node->start_server();
 
-  rclcpp::spin(node->get_node_base_interface());
+  rclcpp::spin(node);
   rclcpp::shutdown();
 
   return 0;
