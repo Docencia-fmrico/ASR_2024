@@ -35,7 +35,7 @@ TFPublisherNode::TFPublisherNode()
   generator_(rd_())
 {
   timer_generate_ = create_wall_timer(
-    10s, std::bind(&TFPublisherNode::generate_tf, this));
+    20s, std::bind(&TFPublisherNode::generate_tf, this));
   timer_publish_ = create_wall_timer(
     50ms, std::bind(&TFPublisherNode::publish_tf, this));
 

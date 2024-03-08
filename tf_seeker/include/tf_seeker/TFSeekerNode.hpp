@@ -16,6 +16,8 @@
 #ifndef TF_SEEKER__TFSEEKERNODE_HPP_
 #define TF_SEEKER__TFSEEKERNODE_HPP_
 
+#include "tf_seeker/PIDController.hpp"
+
 #include "tf2_ros/transform_listener.h"
 #include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -36,6 +38,8 @@ private:
 
   tf2::BufferCore tf_buffer_;
   tf2_ros::TransformListener tf_listener_;
+
+  PIDController vlin_pid_, vrot_pid_;
 };
 
 }  //  namespace tf_seeker

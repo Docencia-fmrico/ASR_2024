@@ -24,6 +24,7 @@ include_directories(include)
 add_library(${PROJECT_NAME} SHARED
   src/tf_seeker/TFPublisherNode.cpp
   src/tf_seeker/TFSeekerNode.cpp
+  src/tf_seeker/PIDController.cpp
 )
 ament_target_dependencies(${PROJECT_NAME} ${dependencies})
 

@@ -34,7 +34,9 @@ using namespace std::chrono_literals;
 TFSeekerNode::TFSeekerNode()
 : Node("tf_seeker"),
   tf_buffer_(),
-  tf_listener_(tf_buffer_)
+  tf_listener_(tf_buffer_),
+  vlin_pid_(0.0, 1.0, 0.0, 0.7),
+  vrot_pid_(0.0, 1.0, 0.3, 1.0)
 {
   vel_publisher_ = create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
   timer_ = create_wall_timer(
@@ -59,8 +61,8 @@ TFSeekerNode::control_cycle()
     double angle = atan2(y, x);
     double dist = sqrt(x * x + y * y);
 
-    double vel_rot = std::clamp(angle, -0.8, 0.8);
-    double vel_lin = std::clamp(dist - 1.0, -0.5, 0.5);
+    double vel_rot = std::clamp(vrot_pid_.get_output(angle), -2.0, 2.0);
+    double vel_lin = std::clamp(vlin_pid_.get_output(dist - 1.0), -1.0, 1.0);
 
     geometry_msgs::msg::Twist twist;
     twist.linear.x = vel_lin;
