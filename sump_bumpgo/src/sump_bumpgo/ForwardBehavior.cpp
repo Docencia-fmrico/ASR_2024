@@ -50,7 +50,7 @@ ForwardBehavior::on_deactivate(const rclcpp_lifecycle::State & previous_state)
 void
 ForwardBehavior::control_cycle()
 {
-  RCLCPP_INFO(get_logger(), "Forward Behavior");
+  RCLCPP_DEBUG(get_logger(), "Forward Behavior");
 
   geometry_msgs::msg::Twist out_vel;
   out_vel.linear.x = SPEED_LINEAR;

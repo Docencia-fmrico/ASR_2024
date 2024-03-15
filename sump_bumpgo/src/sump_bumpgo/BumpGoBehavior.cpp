@@ -66,10 +66,9 @@ BumpGoBehavior::bumper_callback(kobuki_ros_interfaces::msg::BumperEvent::UniqueP
 void
 BumpGoBehavior::control_cycle()
 {
-  RCLCPP_INFO(get_logger(), "BumpGo Behavior");
-
   switch (state_) {
     case FORWARD:
+      RCLCPP_INFO(get_logger(), "BumpGo Behavior: FORWARD");
       add_activation("forward_behavior");
 
       if (check_forward_2_avoid()) {
@@ -77,6 +76,7 @@ BumpGoBehavior::control_cycle()
       }
       break;
     case AVOID:
+      RCLCPP_INFO(get_logger(), "BumpGo Behavior: AVOID");
       add_activation("avoid_behavior");
 
       if (check_avoid_2_forward()) {

@@ -35,7 +35,7 @@ ObstacleDetectorNode::ObstacleDetectorNode()
   RCLCPP_INFO(get_logger(), "ObstacleDetectorNode set to %f m", min_distance_);
 
   laser_sub_ = create_subscription<sensor_msgs::msg::LaserScan>(
-    "input_laser", rclcpp::SensorDataQoS().reliable(),
+    "input_scan", rclcpp::SensorDataQoS().reliable(),
     std::bind(&ObstacleDetectorNode::laser_callback, this, _1));
   obstacle_pub_ = create_publisher<std_msgs::msg::Bool>(
     "obstacle", 100);
