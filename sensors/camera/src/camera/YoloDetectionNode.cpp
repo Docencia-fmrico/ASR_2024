@@ -57,7 +57,7 @@ YoloDetectionNode::detection_callback(
     detection_msg.bbox.size_y = detection.bbox.size.y;
 
     vision_msgs::msg::ObjectHypothesisWithPose obj_msg;
-    obj_msg.hypothesis.class_id = detection.class_id;
+    obj_msg.hypothesis.class_id = detection.class_name;
     obj_msg.hypothesis.score = detection.score;
 
     detection_msg.results.push_back(obj_msg);

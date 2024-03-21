@@ -7,5 +7,7 @@ repositories:
     type: git
     url: https://github.com/fmrico/cascade_lifecycle
     version: rolling
-
-  
+  ThirdParty/groot:
+    type: git
+    url: https://github.com/BehaviorTree/Groot
+    version: master
