@@ -53,7 +53,7 @@ AvoidBehavior::on_deactivate(const rclcpp_lifecycle::State & previous_state)
 void
 AvoidBehavior::control_cycle()
 {
-  RCLCPP_INFO(get_logger(), "Avoid Behavior");
+  RCLCPP_DEBUG(get_logger(), "Avoid Behavior");
 
   geometry_msgs::msg::Twist out_vel;
 
